@@ -1,3 +1,6 @@
 export const app = {
-  loginadd:"/login" 
+  loginadd:"/login" ,
+  menus:'/menus',
+  users:'/users',
+  userss:'/users',
 }
