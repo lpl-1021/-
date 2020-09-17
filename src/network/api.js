@@ -3,4 +3,6 @@ export const app = {
   menus:'/menus',
   users:'/users',
   userss:'/users',
+  rights:'/rights/list',
+  roles:'/roles'
 }

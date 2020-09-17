@@ -61,6 +61,48 @@ const database = {
       data
     })
   },
+  rights(params){
+    return request({
+      url:app.rights,
+      method:'get',
+      params:params
+    })
+  },
+  roles(params){
+    return request({
+      url:app.roles,
+      method:'get',
+      params:params
+    })
+  },
+  removeroles(roles,rightId){
+    return request({
+      url:`roles/${roles.id}/rights/${rightId}`,
+      method:'delete',
+      
+    })
+  },
+  rolescompile(params){
+    return request({
+      url:`rights/tree`,
+      method:'get',
+      params:params
+    })
+  },
+  rolesrights(rids,id){
+    return request({
+      url:`roles/${id}/rights`,
+      method:'post',
+      data:rids
+    })
+  },
+  rolecompile(id,rid){
+    return request({
+      url:`users/${id}/role`,
+      method:'put',
+      data:rid
+    })
+  },
 }
 
 
