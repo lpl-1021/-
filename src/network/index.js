@@ -103,6 +103,20 @@ const database = {
       data:rid
     })
   },
+  categories(params){
+    return request({
+      url:'categories',
+      method:'get',
+      params
+    })
+  },
+  categoriesll(data){
+    return request({
+      url:app.categoriesl,
+      method:'post',
+      data:qs.stringify(data)
+    })
+  },
 }
 
 

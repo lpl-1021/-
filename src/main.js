@@ -7,9 +7,11 @@ import "./assets/fonts/iconfont.css"
 import http from './network/index'
 import './plugins/element'
 import 'element-ui/lib/theme-chalk/index.css';
+import TreeTable from 'vue-table-with-tree-grid'
 
 Vue.prototype.$http = http
 Vue.config.productionTip = false
+Vue.component('tree-table',TreeTable)
 
 new Vue({
   router,

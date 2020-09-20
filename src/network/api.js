@@ -4,5 +4,6 @@ export const app = {
   users:'/users',
   userss:'/users',
   rights:'/rights/list',
-  roles:'/roles'
+  roles:'/roles',
+  categoriesl:'/categories'
 }
