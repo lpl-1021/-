@@ -117,6 +117,48 @@ const database = {
       data:qs.stringify(data)
     })
   },
+  categorieslll(params,id){
+    return request({
+      url:`categories/${id}/attributes`,
+      method:'get',
+      params
+    })
+  },
+  categoriesllll(data,id){
+    return request({
+      url:`categories/${id}/attributes`,
+      method:'post',
+      data:qs.stringify(data)
+    })
+  },
+  categorieslllll(params,id,attr_id){
+    return request({
+      url:`categories/${id}/attributes/${attr_id}`,
+      method:'get',
+      params
+    })
+  },
+  categoriesllllll(data,id,attr_id){
+    return request({
+      url:`categories/${id}/attributes/${attr_id}`,
+      method:'put',
+      data
+    })
+  },
+  categorieslllllll(id,attrid){
+    return request({
+      url:`categories/${id}/attributes/${attrid}`,
+      method:'delete',
+      
+    })
+  },
+  categoriesllllllll(data,id,attrid){
+    return request({
+      url:`categories/${id}/attributes/${attrid}`,
+      method:'put',
+      data
+    })
+  },
 }
 
 
