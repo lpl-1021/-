@@ -159,6 +159,27 @@ const database = {
       data
     })
   },
+  goods(params){
+    return request({
+      url:`goods`,
+      method:'get',
+      params
+    })
+  },
+  removegoods(id){
+    return request({
+      url:`goods/${id}`,
+      method:'delete',
+      
+    })
+  },
+  addgoods(data){
+    return request({
+      url:'goods',
+      method:'post',
+      data:qs.stringify(data)
+    })
+  },
 }
 
 
