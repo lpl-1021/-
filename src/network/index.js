@@ -180,6 +180,20 @@ const database = {
       data:qs.stringify(data)
     })
   },
+  orders(params){
+    return request({
+      url:`orders`,
+      method:'get',
+      params
+    })
+  },
+  orderkuaidi(params){
+    return request({
+      url:'/kuaidi/1106975712662',
+      method:'get',
+      params
+    })
+  }
 }
 
 

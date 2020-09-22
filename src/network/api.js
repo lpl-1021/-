@@ -1,7 +1,7 @@
 export const app = {
   loginadd:"/login" ,
   menus:'/menus',
-  users:'/users',
+  users:'/users', 
   userss:'/users',
   rights:'/rights/list',
   roles:'/roles',
