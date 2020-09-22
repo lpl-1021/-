@@ -193,6 +193,13 @@ const database = {
       method:'get',
       params
     })
+  },
+  reports(params){
+    return request({
+      url:'reports/type/1',
+      method:'get',
+      params
+    })
   }
 }
 
